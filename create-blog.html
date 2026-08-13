@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>InkSpace | Create Blog</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header class="navbar">
+    <a class="brand" href="index.html">InkSpace</a>
+    <nav><a href="index.html">Home</a><a href="dashboard.html">Dashboard</a><a class="btn btn-small" href="create-blog.html">Create Blog</a></nav>
+  </header>
+
+  <main class="editor-wrap">
+    <section class="editor-card">
+      <div class="section-heading">
+        <div><span class="eyebrow">CREATE</span><h1>Write a new story</h1></div>
+        <a href="dashboard.html" class="text-link">← Dashboard</a>
+      </div>
+
+      <form data-form="blog">
+        <label>Blog Title
+          <input type="text" name="title" placeholder="Give your story a title..." required>
+        </label>
+        <label>Category
+          <select name="category" required>
+            <option value="">Choose a category</option>
+            <option>Technology</option>
+            <option>Learning</option>
+            <option>Lifestyle</option>
+            <option>Ideas</option>
+          </select>
+        </label>
+        <label>Content
+          <textarea name="content" rows="12" placeholder="Start writing your story..." required></textarea>
+        </label>
+        <div class="editor-actions">
+          <button class="btn btn-outline" type="button" id="saveDraft">Save Draft</button>
+          <button class="btn" type="submit">Publish Blog</button>
+        </div>
+      </form>
+    </section>
+  </main>
+
+  <footer><p>© 2026 InkSpace.</p></footer>
+  <script src="js/script.js"></script>
+</body>
+</html>

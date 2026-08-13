@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>InkSpace | Login</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="auth-page">
+  <header class="navbar">
+    <a class="brand" href="index.html">InkSpace</a>
+    <nav><a href="index.html">Home</a><a class="active" href="login.html">Login</a><a class="btn btn-small" href="register.html">Register</a></nav>
+  </header>
+
+  <main class="auth-wrap">
+    <section class="auth-card">
+      <span class="eyebrow">WELCOME BACK</span>
+      <h1>Log in to InkSpace</h1>
+      <p class="muted">Continue writing and sharing your ideas.</p>
+      <form data-form="login">
+        <label>Email
+          <input type="email" name="email" placeholder="you@example.com" required>
+        </label>
+        <label>Password
+          <input type="password" name="password" placeholder="••••••••" minlength="6" required>
+        </label>
+        <button class="btn full" type="submit">Log In</button>
+      </form>
+      <p class="form-footer">Don't have an account? <a href="register.html">Create one</a></p>
+    </section>
+  </main>
+
+  <footer><p>© 2026 InkSpace.</p></footer>
+  <script src="js/script.js"></script>
+</body>
+</html>
